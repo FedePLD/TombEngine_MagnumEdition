@@ -7,6 +7,8 @@ class Vector3i;
 
 namespace TEN::Math::Geometry
 {
+	using namespace DirectX::SimpleMath;
+
 	// Integer-based point translation
 	Vector3i TranslatePoint(const Vector3i& point, short headingAngle, float forward, float down = 0.0f, float right = 0.0f, const Vector3& axis = Vector3::UnitY);
 	Vector3i TranslatePoint(const Vector3i& point, short headingAngle, const Vector3i& relOffset, const Vector3& axis = Vector3::UnitY);
